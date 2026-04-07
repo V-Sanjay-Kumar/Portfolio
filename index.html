@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanjay Kumar | AI Developer & Automation Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Animated Background -->
+    <canvas id="particles-canvas"></canvas>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-glow bg-glow-3"></div>
+
+    <!-- Navbar -->
+    <header id="navbar">
+      <nav>
+        <a href="#" class="logo">
+          <span class="logo-text">Sanjay's Portfolio</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#skills" data-text="Skills">Skills</a></li>
+          <li><a href="#projects" data-text="Projects">Projects</a></li>
+          <li><a href="#automation" data-text="Automation">Automation</a></li>
+          <li><a href="#about" data-text="About">About</a></li>
+          <li><a href="#contact" data-text="Contact">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-content reveal">
+
+        <h3 class="hero-greeting">Hello, I'm</h3>
+        <h1 class="hero-name">Sanjay Kumar</h1>
+        <h2 class="typing-wrapper">
+          <span class="typing-prefix">I'm a </span>
+          <span class="typing" id="typing-text"></span>
+          <span class="cursor">|</span>
+        </h2>
+        <p class="hero-desc">
+          AI-focused Information Technology student building advanced automation
+          workflows using n8n. Passionate about solving real-world problems
+          using AI, IoT, and scalable software systems.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fa-solid fa-rocket"></i>
+            Explore My Work
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fa-solid fa-paper-plane"></i>
+            Get In Touch
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number" data-count="5">0</span>+
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-count="3">0</span>+
+            <span class="stat-label">Certifications</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-count="8">0</span>+
+            <span class="stat-label">Skills</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="section-header reveal">
+        <span class="section-tag"><i class="fa-solid fa-code"></i> My Skills</span>
+        <h2>Core Competencies</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills-grid reveal">
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+          <div class="skill-info">
+            <h4>Python & AI Development</h4>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="90"><span>90%</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fa-solid fa-c"></i></div>
+          <div class="skill-info">
+            <h4>C / C++ Programming</h4>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="85"><span>85%</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <div class="skill-info">
+            <h4>Machine Learning & Data Science</h4>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="80"><span>80%</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fa-solid fa-diagram-project"></i></div>
+          <div class="skill-info">
+            <h4>Workflow Automation (n8n)</h4>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="88"><span>88%</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+          <div class="skill-info">
+            <h4>HTML, CSS & Web Design</h4>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="95"><span>95%</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="section-header reveal">
+        <span class="section-tag"><i class="fa-solid fa-folder-open"></i> Portfolio</span>
+        <h2>Major Projects</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="project-grid reveal">
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-icon"><i class="fa-solid fa-eye-low-vision"></i></div>
+            <div class="project-number">01</div>
+          </div>
+          <h3>AI-Based Intelligent Blind Stick</h3>
+          <p>
+            Developed a smart assistive stick for visually impaired individuals using obstacle and water detection sensors. Implemented basic embedded system integration with real-time alerts to improve user safety. Focused on building a simple, low-cost, and practical solution for everyday use.
+          </p>
+          <div class="project-tags">
+            <span>IoT</span><span>Sensors</span><span>Embedded</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-icon"><i class="fa-solid fa-shield-heart"></i></div>
+            <div class="project-number">02</div>
+          </div>
+          <h3>Smart Safety Device System</h3>
+          <p>
+            Developing LifeBrace, a safety-focused system designed for women, senior citizens, and differently-abled individuals. The solution integrates sensors and real-time alert mechanisms to detect emergencies and provide immediate assistance. Focused on building a practical, user-friendly system for real-world safety applications.
+          </p>
+          <div class="project-tags">
+            <span>Safety</span><span>Hardware</span><span>AI</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+            <div class="project-number">03</div>
+          </div>
+          <h3>Duplicate Order Detection Algorithm</h3>
+          <p>
+            Developed sorting-based optimized algorithm for detecting duplicate
+            order IDs in e-commerce systems. Improved detection efficiency and
+            system reliability.
+          </p>
+          <div class="project-tags">
+            <span>Algorithm</span><span>E-Commerce</span><span>Python</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- N8N AUTOMATION -->
+    <section id="automation" class="section">
+      <div class="section-header reveal">
+        <span class="section-tag"><i class="fa-solid fa-robot"></i> Automation</span>
+        <h2>n8n Automation Projects</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="project-grid reveal">
+        <div class="project-card automation-card">
+          <div class="project-card-header">
+            <div class="project-icon"><i class="fa-solid fa-users-gear"></i></div>
+            <div class="project-number">01</div>
+          </div>
+          <h3>Automated Lead Generation Workflow</h3>
+          <p>
+            Created an end-to-end lead capture workflow. Collected web form
+            data, validated emails, stored in Google Sheets, and triggered
+            automated email responses. Reduced manual processing by 80%.
+          </p>
+          <div class="project-tags">
+            <span>n8n</span><span>Leads</span><span>Email</span>
+          </div>
+        </div>
+
+        <div class="project-card automation-card">
+          <div class="project-card-header">
+            <div class="project-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <div class="project-number">02</div>
+          </div>
+          <h3>AI Content Automation Pipeline</h3>
+          <p>
+            Integrated OpenAI API with n8n to auto-generate blog posts and
+            social media captions. Stored in Notion and scheduled publishing.
+            Enabled fully automated content production system.
+          </p>
+          <div class="project-tags">
+            <span>OpenAI</span><span>Content</span><span>Notion</span>
+          </div>
+        </div>
+
+        <div class="project-card automation-card">
+          <div class="project-card-header">
+            <div class="project-icon"><i class="fa-brands fa-telegram"></i></div>
+            <div class="project-number">03</div>
+          </div>
+          <h3>Telegram Server Monitoring Bot</h3>
+          <p>
+            Developed real-time alert system that monitors system health and
+            sends automated Telegram notifications for downtime events.
+          </p>
+          <div class="project-tags">
+            <span>Telegram</span><span>Monitoring</span><span>Alerts</span>
+          </div>
+        </div>
+
+        <div class="project-card automation-card">
+          <div class="project-card-header">
+            <div class="project-icon"><i class="fa-solid fa-file-lines"></i></div>
+            <div class="project-number">04</div>
+          </div>
+          <h3>AI Resume Screening Automation</h3>
+          <p>
+            Built workflow to extract resume data, analyze candidate profiles
+            using AI scoring models, and automatically rank applicants.
+          </p>
+          <div class="project-tags">
+            <span>AI</span><span>HR Tech</span><span>Scoring</span>
+          </div>
+        </div>
+
+        <div class="project-card automation-card">
+          <div class="project-card-header">
+            <div class="project-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+            <div class="project-number">05</div>
+          </div>
+          <h3>E-Commerce Order Automation</h3>
+          <p>
+            Automated duplicate order detection, validated payment status, and
+            synced CRM updates using n8n workflows.
+          </p>
+          <div class="project-tags">
+            <span>E-Commerce</span><span>CRM</span><span>n8n</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section">
+      <div class="section-header reveal">
+        <span class="section-tag"><i class="fa-solid fa-award"></i> Achievements</span>
+        <h2>Certifications</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="cert-grid reveal">
+        <div class="cert-card">
+          <div class="cert-badge"><i class="fa-solid fa-medal"></i></div>
+          <h4>The JOY of Computing using Python</h4>
+          <p>NPTEL — Elite</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-badge"><i class="fa-solid fa-trophy"></i></div>
+          <h4>UN Sustainable Development Goals</h4>
+          <p>NPTEL — Elite + Silver</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-badge"><i class="fa-solid fa-certificate"></i></div>
+          <h4>C, C++, Python & Data Science</h4>
+          <p>Certified Professional</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section-header reveal">
+        <span class="section-tag"><i class="fa-solid fa-user"></i> About Me</span>
+        <h2>Know Who I Am</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-card glass reveal">
+        <div class="about-content">
+          <p>
+            I am a second-year Information Technology student focused on Artificial Intelligence and real-world problem solving. I have completed certifications in C, C++, Python and Data Science. Now I am building strong skills in Python and core programming while working on practical projects like a blind assistance stick and the LifeBrace safety solution.
+          </p>
+          <p>
+            I am interested in developing systems that combine hardware and software to create impactful, real-world applications.
+          </p>
+        </div>
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>IT Student — 2nd Year</span>
+          </div>
+          <div class="highlight-item">
+            <i class="fa-solid fa-brain"></i>
+            <span>AI & ML Enthusiast</span>
+          </div>
+          <div class="highlight-item">
+            <i class="fa-solid fa-microchip"></i>
+            <span>IoT Developer</span>
+          </div>
+          <div class="highlight-item">
+            <i class="fa-solid fa-gears"></i>
+            <span>Automation Engineer</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section class="section resume-section">
+      <div class="resume-card glass reveal">
+        <div class="resume-icon"><i class="fa-solid fa-file-arrow-down"></i></div>
+        <h2>Want to know more?</h2>
+        <p>Download my resume for a detailed overview of my experience and skills.</p>
+        <a href="resume.pdf" class="btn btn-primary" download>
+          <i class="fa-solid fa-download"></i>
+          Download Resume
+        </a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="section-header reveal">
+        <span class="section-tag"><i class="fa-solid fa-envelope"></i> Reach Out</span>
+        <h2>Get In Touch</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid reveal">
+        <a href="mailto:sanjay@gmail.com" class="contact-card">
+          <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+          <h4>Email</h4>
+          <p>sanjay@gmail.com</p>
+        </a>
+        <a href="tel:+911234567890" class="contact-card">
+          <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+          <h4>Phone</h4>
+          <p>+91-1234567890</p>
+        </a>
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <h4>Location</h4>
+          <p>Chennai, India</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-content">
+        <p>&copy; Sanjay Kumar | AI Developer & Automation Engineer</p>
+      </div>
+    </footer>
+
+    <script>
+      /* ===== PARTICLE BACKGROUND ===== */
+      const canvas = document.getElementById('particles-canvas');
+      const ctx = canvas.getContext('2d');
+      let particles = [];
+
+      function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
+      resizeCanvas();
+      window.addEventListener('resize', resizeCanvas);
+
+      class Particle {
+        constructor() {
+          this.reset();
+        }
+        reset() {
+          this.x = Math.random() * canvas.width;
+          this.y = Math.random() * canvas.height;
+          this.size = Math.random() * 2 + 0.5;
+          this.speedX = (Math.random() - 0.5) * 0.5;
+          this.speedY = (Math.random() - 0.5) * 0.5;
+          this.opacity = Math.random() * 0.5 + 0.1;
+        }
+        update() {
+          this.x += this.speedX;
+          this.y += this.speedY;
+          if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+          if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+        }
+        draw() {
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(0, 245, 255, ${this.opacity})`;
+          ctx.fill();
+        }
+      }
+
+      for (let i = 0; i < 80; i++) particles.push(new Particle());
+
+      function connectParticles() {
+        for (let a = 0; a < particles.length; a++) {
+          for (let b = a + 1; b < particles.length; b++) {
+            const dx = particles[a].x - particles[b].x;
+            const dy = particles[a].y - particles[b].y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+            if (dist < 120) {
+              ctx.beginPath();
+              ctx.strokeStyle = `rgba(0, 245, 255, ${0.08 * (1 - dist / 120)})`;
+              ctx.lineWidth = 0.5;
+              ctx.moveTo(particles[a].x, particles[a].y);
+              ctx.lineTo(particles[b].x, particles[b].y);
+              ctx.stroke();
+            }
+          }
+        }
+      }
+
+      function animateParticles() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach(p => { p.update(); p.draw(); });
+        connectParticles();
+        requestAnimationFrame(animateParticles);
+      }
+      animateParticles();
+
+      /* ===== TYPING ANIMATION ===== */
+      const words = ["AI Developer", "Automation Engineer", "IoT Innovator", "Problem Solver"];
+      let wordIndex = 0, charIndex = 0, isDeleting = false;
+      const typingEl = document.getElementById('typing-text');
+
+      function typeEffect() {
+        const current = words[wordIndex];
+        typingEl.textContent = isDeleting
+          ? current.substring(0, charIndex--)
+          : current.substring(0, charIndex++);
+
+        if (!isDeleting && charIndex > current.length) {
+          isDeleting = true;
+          setTimeout(typeEffect, 1500);
+          return;
+        }
+        if (isDeleting && charIndex === 0) {
+          isDeleting = false;
+          wordIndex = (wordIndex + 1) % words.length;
+        }
+        setTimeout(typeEffect, isDeleting ? 50 : 100);
+      }
+      typeEffect();
+
+      /* ===== SCROLL REVEAL ===== */
+      const revealEls = document.querySelectorAll('.reveal');
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      }, { threshold: 0.1 });
+      revealEls.forEach(el => revealObserver.observe(el));
+
+      /* ===== SKILL BAR ANIMATION ===== */
+      const skillBars = document.querySelectorAll('.skill-progress');
+      const skillObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const width = entry.target.getAttribute('data-width');
+            entry.target.style.width = width + '%';
+          }
+        });
+      }, { threshold: 0.5 });
+      skillBars.forEach(bar => skillObserver.observe(bar));
+
+      /* ===== STAT COUNTER ===== */
+      const statNumbers = document.querySelectorAll('.stat-number');
+      const statObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const target = parseInt(entry.target.getAttribute('data-count'));
+            let count = 0;
+            const interval = setInterval(() => {
+              entry.target.textContent = ++count;
+              if (count >= target) clearInterval(interval);
+            }, 100);
+            statObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.5 });
+      statNumbers.forEach(num => statObserver.observe(num));
+
+      /* ===== NAVBAR SCROLL ===== */
+      let lastScroll = 0;
+      window.addEventListener('scroll', () => {
+        const navbar = document.getElementById('navbar');
+        const currentScroll = window.pageYOffset;
+        navbar.classList.toggle('scrolled', currentScroll > 50);
+        lastScroll = currentScroll;
+      });
+
+      /* ===== HAMBURGER ===== */
+      const hamburger = document.getElementById('hamburger');
+      const navLinks = document.getElementById('navLinks');
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('open');
+      });
+      navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('active');
+          navLinks.classList.remove('open');
+        });
+      });
+    </script>
+  </body>
+</html>
